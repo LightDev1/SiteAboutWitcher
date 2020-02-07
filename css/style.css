@@ -60,12 +60,14 @@ body {
     line-height: 16px;
     margin-bottom: 16px;
     display: block;
+    animation-delay: 0.1s;
 }
 
 .rating {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    animation-delay: 0.3s;
 }
 
 .rating-number {
@@ -79,6 +81,7 @@ body {
     font-size: 76px;
     line-height: 89px;
     margin-bottom: 10px;
+    animation-delay: 0.5s;
 }
 
 .main-description {
@@ -86,14 +89,22 @@ body {
     font-size: 14px;
     line-height: 150%;
     margin-bottom: 40px;
+    animation-delay: 0.7s;
 }
 
 .button {
+    display: inline-block;
     background: #9D2929;
     border-radius: 8px;
     color: #ffffff;
     border: none;
     padding: 22px 72px;
+    text-decoration: none;
+    animation-delay: 1s;
+}
+
+.button:active {
+    color: #ffffff;
 }
 
 .main-content {
@@ -103,6 +114,10 @@ body {
 }
 
 .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
     background-color: #9D2929;
     width: 100px;
     height: 100px;
@@ -121,12 +136,14 @@ body {
     content: '';
     width: 132px;
     height: 132px;
+    outline: none;
     background: #9D2929;
     opacity: 0.5;
     position: absolute;
     border-radius: 50%;
     left: -16px;
     top: -16px;
+    animation: pulse 0.5s ease-in-out 2s infinite;
 }
 
 /* slider */
@@ -276,6 +293,10 @@ body {
 }
 
 @media (max-width: 540px) {
+    body {
+        background-position: top right 50%;
+    }
+
     .menu-button {
         display: block;
         position: absolute;
